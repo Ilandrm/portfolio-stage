@@ -3,7 +3,7 @@ import { createPinia } from 'pinia'
 
 import './style.css'
 import router from './router/index'
-import App from './App.vue'
+import App from '../src/App.vue'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHouse,faDiagramProject,faAddressBook,faHeadphones,faComputer, faMartiniGlassCitrus,faCoffee,faCamera,faBriefcase, faSchool, faWrench,faArrowLeft, faUser } from '@fortawesome/free-solid-svg-icons'
