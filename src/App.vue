@@ -1,9 +1,9 @@
 <script setup>
-import HomePage from './view/HomePage.vue'
+import EnterPage from './view/EnterPageView.vue'
 </script>
 
 <template>
-<HomePage/>
+<RouterView/>
 </template>
 
 <style scoped>

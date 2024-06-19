@@ -4,39 +4,65 @@
 <template>
     <header>
         <nav class="d-flex flex-row">
-            <h1>Ilan Darmon</h1>
+            <div class="d-flex">
+            <h1><router-link to="/home">Portfolio</router-link></h1>
+            <button class="btn btn-primary contact">
+                <router-link to="/contact">
+                Contact
+            </router-link>
+            </button>
+            </div>
             <div class="d-flex flex-row">
-             <div class="ensLienIcone"><font-awesome-icon :icon="['fas', 'house']" /><RouterLink to="#">Accueil</RouterLink></div>
-             <div class="ensLienIcone"><font-awesome-icon :icon="['fas', 'diagram-project']" /><RouterLink to="#">Projets</RouterLink></div>
-             <div class="ensLienIcone"><font-awesome-icon :icon="['fas', 'address-book']" /><RouterLink to="#">Contact</RouterLink></div>
+             <div class="ensLienIcone"><a href="https://github.com/Ilandrm"><font-awesome-icon :icon="['fab', 'github']" /></a></div>
+             <div class="ensLienIcone"><a href="https://gricad-gitlab.univ-grenoble-alpes.fr/darmoni"><font-awesome-icon :icon="['fab', 'gitlab']" /></a></div>
+             <div class="ensLienIcone"><a href="https://www.linkedin.com/in/ilan-darmon-0889ab1a0/"><font-awesome-icon :icon="['fab', 'linkedin']" /></a></div>
             </div>
         </nav>
     </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+
 nav{
     justify-content: space-between;
     align-items: center;
+    padding-top: 1rem
+}
+.contact{
+    width: 5rem;
+    margin-left: 4rem;
+    height: 2.5rem;
+    margin-top: 0.8rem;
+   background-color:#6F46E1 ;
+   border-color:#6F46E1;
+   color: white;
+    a{
+        color: white;
+        text-decoration: none;
+    }
 }
 h1{
-    font-weight: bolder;
-    font-size: 25px;
-    margin-left: 1rem;
+    
+    a{
+        font-weight: bold;
+        font-size: 25px;
+        margin-left: 1rem;
+        color: #6F46E1;
+    }
 }
 a{
-    color: #7D4FFE;
     text-decoration: none;
-    margin-left:10px ;
 }
-.ensLienIcone:hover{
-    background-color: #C49FFF;
+a{
+    
 }
-.ensLienIcone{
-    padding: 1.5rem;
+
+svg:hover{
+    color: white;
 }
 svg{
-    color: white;
-    margin-right: 1rem;
+    color: #7D4FFE;
+    margin-right: 0.5rem;
+    margin-right:2rem;
 }
 </style>
